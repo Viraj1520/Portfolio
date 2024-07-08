@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viraj - personal portfolio</title>
 
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+
   <!-- 
     - favicon 
   -->
@@ -105,8 +108,8 @@
 
           <picture>
             <source srcset="./assets/images/heroimage.png" media="(min-width: 768px)">
-            <source srcset="./assets/images/profile.png" media="(min-width: 500px)">
-            <img src="./assets/images/profile.png" alt="A man in a blue shirt with a happy expression"
+            <source srcset="./assets/images/heroimage.png" media="(min-width: 500px)">
+            <img src="./assets/images/heroimage.png" alt="A man in a blue shirt with a happy expression"
               class="w-100">
           </picture>
 
@@ -124,23 +127,23 @@
         <ul class="hero-social-list">
 
           <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://github.com/Viraj1520" target="_blank" class="hero-social-link">
+              <ion-icon name="logo-github"></ion-icon>
 
               <div class="tooltip">Github</div>
             </a>
           </li>
 
           <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://www.salesforce.com/trailblazer/virajgohil" target="_blank" class="hero-social-link">
+              <ion-icon name="cloud-outline"></ion-icon>
 
-              <div class="tooltip">Twitter</div>
+              <div class="tooltip">Trailhead</div>
             </a>
           </li>
 
           <li>
-            <a href="#" class="hero-social-link">
+            <a href="https://www.linkedin.com/in/viraj-gohil/" target="_blank" class="hero-social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
 
               <div class="tooltip">Linkedin</div>
@@ -175,7 +178,7 @@
               2+ <strong>Years of Experience</strong>
               </h2>
 
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+              
 
             </a>
           </li>
@@ -191,7 +194,7 @@
                 10+ <strong>Government Projects</strong>
               </h2>
 
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+              
 
             </a>
           </li>
@@ -207,7 +210,7 @@
                 100+ <strong>Trailhead Badges </strong>
               </h2>
 
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+              
 
             </a>
           </li>
@@ -246,7 +249,7 @@
 
 
           <div class="btn-group">
-            <button class="btn btn-secondary">Hire me</button>
+            <a href="#contact" class="btn btn-secondary">Hire me</a>
 
             <a href="./assets/resume/Viraj-Gohil-Salesforce-Resume-1 2.pdf" download="Resume" class="btn btn-primary">Download cv</a>
           </div>
@@ -633,8 +636,8 @@
             </div>
           </li>
 
-          <li>
-            <a href="#" class="project-card">
+          <li onclick="openModal()" class="card" data-img-src="./assets/images/dohmh.jpg" data-title="DOHMH" data-description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt iste velit repellat nisi. Hic magni minus libero ea fugiat adipisci velit similique esse vitae voluptates provident modi, sapiente quia alias perspiciatis veniam delectus dolor consequatur harum! Tempore delectus exercitationem ratione commodi nisi rerum fugiat mollitia ad, libero laborum dolorum.">
+            <a class="project-card">
 
               <figure class="card-banner">
                 <img src="./assets/images/dohmh.jpg" class="w-100 h-50" alt="Department of Mental Health & Hygine">
@@ -649,8 +652,8 @@
             </a>
           </li>
 
-          <li>
-            <a href="#" class="project-card">
+          <li onclick="openModal()" class="card" data-img-src="./assets/images/37453840_8505848.jpg" data-title="ACS" data-description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt iste velit repellat nisi. Hic magni minus libero ea fugiat adipisci velit similique esse vitae voluptates provident modi, sapiente quia alias perspiciatis veniam delectus dolor consequatur harum! Tempore delectus exercitationem ratione commodi nisi rerum fugiat mollitia ad, libero laborum dolorum.">
+            <a class="project-card">
 
               <figure class="card-banner">
                 <img src="./assets/images/37453840_8505848.jpg" class="w-100" alt="Administration of Child Service.">
@@ -665,11 +668,11 @@
             </a>
           </li>
 
-          <li>
-            <a href="#" class="project-card">
+          <li onclick="openModal()" class="card" data-img-src="./assets/images/cannabisMedium.jpeg" data-title="Cannabis" data-description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt iste velit repellat nisi. Hic magni minus libero ea fugiat adipisci velit similique esse vitae voluptates provident modi, sapiente quia alias perspiciatis veniam delectus dolor consequatur harum! Tempore delectus exercitationem ratione commodi nisi rerum fugiat mollitia ad, libero laborum dolorum." >
+            <a class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/cannabis.jpg" class="w-100"
+                <img src="./assets/images/cannabisMedium.jpeg" class="w-100"
                   alt="Cannabis Licensing & Permitting.">
               </figure>
 
@@ -682,11 +685,11 @@
             </a>
           </li>
 
-          <li>
-            <a href="#" class="project-card">
+          <li onclick="openModal()" class="card" data-img-src="./assets/images/barnstableMedium.jpeg" data-title="Barnstable" data-description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt iste velit repellat nisi. Hic magni minus libero ea fugiat adipisci velit similique esse vitae voluptates provident modi, sapiente quia alias perspiciatis veniam delectus dolor consequatur harum! Tempore delectus exercitationem ratione commodi nisi rerum fugiat mollitia ad, libero laborum dolorum.">
+            <a class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/barnstable.jpg" class="w-100"
+                <img src="./assets/images/barnstableMedium.jpeg" class="w-100"
                   alt="Blue digital watch on a dark liver background.">
               </figure>
 
@@ -699,8 +702,8 @@
             </a>
           </li>
 
-          <li>
-            <a href="#" class="project-card">
+          <li onclick="openModal()" class="card" data-img-src="./assets/images/hris.jpg" data-title="HRIS" data-description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt iste velit repellat nisi. Hic magni minus libero ea fugiat adipisci velit similique esse vitae voluptates provident modi, sapiente quia alias perspiciatis veniam delectus dolor consequatur harum! Tempore delectus exercitationem ratione commodi nisi rerum fugiat mollitia ad, libero laborum dolorum.">
+            <a class="project-card">
 
               <figure class="card-banner">
                 <img src="./assets/images/hris.jpg" class="w-100"
@@ -716,8 +719,8 @@
             </a>
           </li>
 
-          <li>
-            <a href="#" class="project-card">
+          <li onclick="openModal()" class="card" data-img-src="./assets/images/contract.jpg" data-title="Contract" data-description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt iste velit repellat nisi. Hic magni minus libero ea fugiat adipisci velit similique esse vitae voluptates provident modi, sapiente quia alias perspiciatis veniam delectus dolor consequatur harum! Tempore delectus exercitationem ratione commodi nisi rerum fugiat mollitia ad, libero laborum dolorum.">
+            <a class="project-card">
 
               <figure class="card-banner">
                 <img src="./assets/images/contract.jpg" class="w-100"
@@ -733,8 +736,8 @@
             </a>
           </li>
 
-          <li>
-            <a href="#" class="project-card">
+          <li onclick="openModal()" class="card" data-img-src="./assets/images/str.jpg" data-title="OSE-STR" data-description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt iste velit repellat nisi. Hic magni minus libero ea fugiat adipisci velit similique esse vitae voluptates provident modi, sapiente quia alias perspiciatis veniam delectus dolor consequatur harum! Tempore delectus exercitationem ratione commodi nisi rerum fugiat mollitia ad, libero laborum dolorum.">
+            <a class="project-card">
 
               <figure class="card-banner">
                 <img src="./assets/images/str.jpg" class="w-100"
@@ -749,8 +752,8 @@
 
             </a>
           </li>
-          <li>
-            <a href="#" class="project-card">
+          <li onclick="openModal()" class="card" data-img-src="./assets/images/container-port-terminal_20187-358.avif" data-title="NJ-STEP" data-description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt iste velit repellat nisi. Hic magni minus libero ea fugiat adipisci velit similique esse vitae voluptates provident modi, sapiente quia alias perspiciatis veniam delectus dolor consequatur harum! Tempore delectus exercitationem ratione commodi nisi rerum fugiat mollitia ad, libero laborum dolorum.">
+            <a class="project-card">
 
               <figure class="card-banner">
                 <img src="./assets/images/container-port-terminal_20187-358.avif" class="w-100"
@@ -760,7 +763,7 @@
               <div class="card-content">
                 <h3 class="h4 card-title">NJ-STEP</h3>
 
-                <time class="publish-date" datetime="2024-04">New Jersey STEP Program</time>
+                <time class="publish-date" datetime="2024-04">New Jersey STEP Program</time>   
               </div>
 
             </a>
@@ -783,7 +786,7 @@
 
           <p class="section-subtitle">Contact</p>
 
-          <h2 class="h3 section-title">Have Any Project in Mind? Please Drop a Message</h2>
+          <h2 class="h3 section-title">Want to Connect? Please Drop a Message</h2>
 
           <p class="section-text">
             Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
@@ -819,7 +822,6 @@
 
               
               </div>
-
             </li>
 
             <li class="contact-list-item">
@@ -839,14 +841,21 @@
 
               <ul class="contac-social-list">
                 <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Twitter</div>
-                    <ion-icon name="logo-twitter"></ion-icon>
+                  <a href="https://www.salesforce.com/trailblazer/virajgohil" target="_blank" class="contact-social-link">
+                    <div class="tooltip">Trailhead</div>
+                    <ion-icon name="cloud-outline"></ion-icon>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="contact-social-link">
+                  <a href="https://github.com/Viraj1520" target="_blank" class="contact-social-link">
+                    <div class="tooltip">Github</div>
+
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/viraj-gohil/" target="_blank" class="contact-social-link">
                     <div class="tooltip">Linkedin</div>
 
                     <ion-icon name="logo-linkedin"></ion-icon>
@@ -932,15 +941,15 @@
           <div class="slider" id="slider"></div>
         </div>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script async type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-        <script type="text/javascript">
+        <script async type="text/javascript">
           (function() {
             emailjs.init("uOJqHrV43MrxqtXss");
           })();
         </script>
 
-        <script>
+        <script async>
           document.getElementById("contact-form").addEventListener("submit", (e) => {
             e.preventDefault();
 
@@ -1016,7 +1025,39 @@
   </footer>
 
 
-
+  <!-- modal code -->
+  <div class="popup" id="aboutModal">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body about-container">
+          <div class="img-frame">
+            <img id="modalImg" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/1f842b2d-1245-497e-9a9e-b1cdb0da1eec" alt="" />
+          </div>
+          <div class="hero-Modal-content">
+            <h1 id="modalTitle">Ruth Thomson</h1>
+            <p id="modalDescription">
+              I'm a front-end developer. I have dedicated myself to creating
+              visually appealing and user-friendly websites. I'm always open to
+              using new skill sets and I believe in the power of collaboration,
+              working closely with designers and back-end developers to deliver
+              cohesive and effective solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <!-- 
@@ -1034,13 +1075,13 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script async src="./assets/js/script.js"></script>
 
   <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script async type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script async nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
